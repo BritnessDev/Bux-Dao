@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import { Sidebar, Menu, MenuItem, SubMenu } from 'react-pro-sidebar';
 
-const Sidebar = () => {
+const SidebarCom = () => {
     const [isOpen, setOpen] = useState(true);
     const menuItems = ['Dashboard', 'To-do Lists', 'Companies', 'Assets', 'Tickets', 'Operations', 'Reports', 'Library'];
     return (
         <div className={`p-2 bg-[#191919] duration-500 relative ${isOpen ? 'h-[100vh] min-w-[184px]' : 'h-[80vh]'}`}>
-            <div className="pt-6">
+            {/* <div className="pt-6">
                 <div>
                     <Sidebar
                         className={`app !border-none text-white ${isOpen ? '!w-44 !min-w-[176px]' : '!w-fit'}`}
@@ -104,9 +104,9 @@ const Sidebar = () => {
                 <button className="rounded-lg bg-[#474747] text-white p-2" onClick={() => setOpen(!isOpen)}>
                     <img src={SideCollapseVertical} alt="no icon" />
                 </button>
-            </div>
+            </div> */}
         </div>
     );
 };
 
-export default Sidebar;
+export default SidebarCom;
